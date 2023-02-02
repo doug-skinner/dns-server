@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib",
+        "allowJs": true,
+        "target": "es5",
+        "declaration": true,
+        "noImplicitAny": true,
+        "baseUrl": "./src",
+        "moduleResolution": "node",
+        "paths": {
+            "~/*": ["./*"]
+        }
+    },
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
